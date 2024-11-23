@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cushion Lover </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="gambar/pavicon.png" type="image/x-icon">
+</head>
+<body>
+	<style>
+	    body {
+	        font-family: Arial, sans-serif;
+	    }
+
+	    .navbar {
+	        background-color: #FF69B4;
+	        padding: 10px;
+	        display: flex; /* Menggunakan flexbox untuk navbar */
+            justify-content: flex-start; /* Mengatur elemen ke kiri */
+	    }
+
+	    .dropdown {
+	        position: relative;
+	        display: inline-block;
+	    }
+
+	    .dropbtn {
+	        background-color: transparent;
+	        border: none;
+	        cursor: pointer;
+	        padding: 10px;
+	        font-size: 24px;
+	    }
+
+	    .dropdown-content {
+	        display: none; /* Sembunyikan dropdown secara default */
+	        position: absolute;
+	        left: 0;
+	        background-color: white;
+	        min-width: 160px;
+	        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	        z-index: 1;
+	    }
+
+	    .dropdown-content a {
+	        color: black;
+	        padding: 12px 16px;
+	        text-decoration: none;
+	        display: block;
+	    }
+
+	    .dropdown-content a:hover {
+	        background-color: #f1f1f1;
+	    }
+
+	    .line {
+	        width: 30px;
+	        height: 4px;
+	        background-color: black;
+	        margin: 5px 0;
+	    }
+
+	    /* Dropdown untuk nested dropdown */
+	    .nested-dropdown {
+	        position: relative;
+	    }
+
+	    .nested-dropdown-content {
+	        display: none; /* Sembunyikan dropdown secara default */
+	        position: absolute;
+	        left: 100%; /* Muncul di sebelah kanan dropdown utama */
+	        top: 0; /* Sejajar dengan dropdown utama */
+	        background-color: white;
+	        min-width: 160px;
+	        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	        z-index: 1;
+	    }
+
+	    .nested-dropdown:hover .nested-dropdown-content {
+	        display: block; /* Tampilkan nested dropdown saat hover */
+	    }
+	</style>
+<body>
+<nav class="navbar">
+    <div class="dropdown nested-dropdown">
+        <button class="dropbtn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button> <!-- Tiga titik sebagai tombol dropdown utama -->
+        <div class="dropdown-content">
+	    	<a href="index.html">Home</a>
+            <div class="dropdown nested-dropdown">
+                <button class="dropbtn">About Us</button>
+                <div class="nested-dropdown-content">
+                    <a href="informasi.html">Informasi Cushion</a>
+					<a href="sejarah.html">Sejarah</a>
+		    </div>
+		    <a href="gallery.html">Gallery</a>
+		   <a href="registration.html">Registration</a>
+		   <a href="contact.html">Contact Us</a>
+            
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Menangani klik pada tombol dropdown untuk navigasi
+    document.querySelectorAll('.dropbtn').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.stopPropagation(); // Mencegah event klik dari menjalar ke elemen lain
+            var dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    // Menutup dropdown jika klik di luar
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === 'block') {
+                    openDropdown.style.display =                     'none';
+                }
+            }
+        }
+    }
+</script>
+	<header class="header">
+	    <div class="sub-title">Selamat Datang di Cushion Makeup</div>
+	    <h1>Cushion Lover</h1>
+	</header>
+    <div class="container">
+	    <main>
+            <div class="carousel">
+            	<h2 >Daftar Produk</h2>
+            	<h3>Top 10 Cushion 2024</h3>
+		        <div class="carousel-container">
+		            <div class="carousel-slide">
+		                <img src="gambar/skintific.jpg" alt="Skintific Cover All Perfect Cushion">
+		                <p>Skintific Cover All Perfect Cushion: Dikenal karena daya tutupnya yang tinggi dan formulanya yang tahan lama.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/originote.jpg" alt="Originote High Cover Serum Cushion">
+		                <p>Originote High Cover Serum Cushion: Hasil akhir yang ringan dan berembun dengan cakupan sedang hingga penuh.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/makeover.jpg" alt="Make Over Powerstay Demi-Matte Cushion">
+		                <p>Make Over Powerstay Demi-Matte Cushion: Sempurna untuk kulit berminyak, memberikan hasil akhir matte.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/instaperfect.jpg" alt="Instaperfect Skincover Air Cushion">
+		                <p>Instaperfect Skincover Air Cushion: Hasil akhir alami dan bercahaya dengan cakupan sedang.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/somethinc.jpg" alt="Somethinc Hooman Breathable Cushion">
+		                <p>Somethinc Hooman Breathable Cushion: Cushion ringan dan mudah menyerap udara.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/luxcrime.jpg" alt="Luxcrime 2nd Skin Luminous Cushion">
+		                <p>Luxcrime 2nd Skin Luminous Cushion: Hasil akhir bercahaya dan berembun.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/wardah.jpg" alt="Wardah Colorfit Perfect Glow Cushion">
+		                <p>Wardah Colorfit Perfect Glow Cushion: Pilihan populer dengan harga terjangkau.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/blp.jpg" alt="BLP Beauty Cover Cushion">
+		                <p>BLP Beauty Cover Cushion: Hasil akhir alami dan lembap.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/rollover.jpg" alt="Rollover Reaction PLUMP! Skin-Loving Blurring Cushion">
+		                <p>Rollover Reaction PLUMP! Skin-Loving Blurring Cushion: Cocok untuk kulit kering.</p>
+		            </div>
+		            <div class="carousel-slide">
+		                <img src="gambar/mizzu.jpg" alt="Mizzu Glam Rock Aqua Foundation">
+		                <p>Mizzu Glam Rock Aqua Foundation: Hasil akhir yang ringan dan matte.</p>
+		            </div>
+		        </div>
+		        <button class="next" id="nextbutton" onclick="changeSlide(1)">&#10095;</button>
+		    </div>
+		    <script>
+		    	let currentSlide = 0; // Indeks slide saat ini
+				const slides = document.querySelectorAll('.carousel-slide'); // Mengambil semua slide
+
+				function showSlide(index) {
+				    // Menghitung indeks slide yang valid
+				    if (index >= slides.length) {
+				        currentSlide = 0; // Kembali ke slide pertama
+				    } else if (index < 0) {
+				        currentSlide = slides.length - 1; // Kembali ke slide terakhir
+				    } else {
+				        currentSlide = index; // Tetap pada indeks yang valid
+				    }
+
+				    // Mengatur transformasi untuk menampilkan slide yang sesuai
+				    const carouselContainer = document.querySelector('.carousel-container');
+				    carouselContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+				}
+
+				function changeSlide(direction) {
+				    showSlide(currentSlide + direction); // Mengubah slide berdasarkan arah
+				}
+
+				// Menampilkan slide pertama saat halaman dimuat
+				showSlide(currentSlide);
+		    </script>
+        
+	    </main>
+
+	    <aside>
+	    	<section>
+	            <h2>Artikel Terbaru</h2>
+	            <article>
+	                <h3><a href="https://editorial.femaledaily.com/blog/2024/02/10/4-pilihan-cushion-brand-lokal-yang-cocok-untuk-kulit-kering">Cushion Lokal Terbaik untuk Kulit Kering</a></h3>
+	                <p>Membahas cushion lokal yang diformulasikan khusus untuk kulit kering.</p>
+	                <a href="https://editorial.femaledaily.com/blog/2024/02/10/4-pilihan-cushion-brand-lokal-yang-cocok-untuk-kulit-kering">Read More</a>
+	            </article>
+	            <article>
+	                <h3><a href="https://www.blibli.com/friends/blog/cushion-untuk-kulit-berjerawat-07/?srsltid=AfmBOorfeBZ3O0gAX8f1e7kWoBR8R4zU9AbjzoGLPj2_8q3OA4Du-IYR">Cushion Lokal dengan Coverage Tinggi untuk Kulit Berjerawat</a></h3>
+	                <p>Cushion dengan coverage tinggi yang dapat menyamarkan noda bekas jerawat.</p>
+	                <a href="https://www.blibli.com/friends/blog/cushion-untuk-kulit-berjerawat-07/?srsltid=AfmBOorfeBZ3O0gAX8f1e7kWoBR8R4zU9AbjzoGLPj2_8q3OA4Du-IYR">Read More</a>
+	            </article>
+	            <article>
+	                <h3><a href="https://www.beautynesia.id/beauty/beaupicks-5-cushion-dengan-spf-tinggi-untuk-tampil-maksimal-dan-terlindungi-setiap-hari/b-256564">Cushion Multifungsi dengan SPF</a></h3>
+	                <p>Cushion yang tidak hanya memberikan coverage, tetapi juga melindungi dari sinar matahari.</p>
+	                <a href="https://www.beautynesia.id/beauty/beaupicks-5-cushion-dengan-spf-tinggi-untuk-tampil-maksimal-dan-terlindungi-setiap-hari/b-256564">Read More</a>
+	            </article>
+	        </section>
+	        <section>
+	        	<h2>Informasi Tambahan</h2>
+			        <p>Widget Jam</p>
+			        <div class="jam-digital">
+						<div class="kotak">
+							<p id="jam"></p>
+						</div>
+						<div class="kotak">
+							<p id="menit"></p>
+						</div>
+						<div class="kotak">
+							<p id="detik"></p>
+						</div>
+					</div>
+			        <script>
+						window.setTimeout("waktu()", 1000);
+					 
+						function waktu() {
+							var waktu = new Date();
+							setTimeout("waktu()", 1000);
+							document.getElementById("jam").innerHTML = waktu.getHours();
+							document.getElementById("menit").innerHTML = waktu.getMinutes();
+							document.getElementById("detik").innerHTML = waktu.getSeconds();
+						}
+					</script>
+					<p>Youtube Channel</p>
+			        <iframe width="560" height="315" src="https://www.youtube.com/embed/m_c_8LthUyw?si=0C_Grb5s8bZ5a9F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </section>
+	    			
+	    		</div>
+	    	</div>     
+	    </aside>
+	</div>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Cushion Lover. Desain oleh Nurul Dwi Rahmawati.</p>
+        <p>Alamat website resmi: www.cushionlover.com</p>
+    </footer>
+</body>
+</html>

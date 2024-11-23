@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cushion Kecantikan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="gambar/pavicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">About 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="informasi.html">Informasi Cushion</a>
+              <a href="sejarah.html">Sejarah</a>
+            </div>
+          </div>
+           <a href="gallery.html">Gallery</a>
+           <a href="registration.html">Registration</a>
+           <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="sub-title">Selamat Datang di Cushion Makeup</div>
+        <h1>Cushion Lover</h1>
+    </header>
+
+    <div class="container">
+		<div class="left">
+            <h2 style="text-align: center;">Wardah Colorfit Glow Cushion</h2>
+            <p style="text-align: center;">
+                <img src="gambar/wardah.jpg" alt="Wardah Colorfit Glow Cushion"><br>
+            </p>
+            <div class="info-container">
+                <tombol onclick="showSection('wardahDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('wardahHarga')">Harga</tombol>
+                <tombol onclick="showSection('wardahIngredients')">Kandungan</tombol>
+
+                <ul id="wardahDescription" class="info-list">
+                    <li>Colorfit Perfect Glow Cushion base makeup dengan radiant (glow) finish dan formula yang ringan sehingga mampu menyatu dengan baik pada wajah untuk memberikan tampilan healthy-glow finish. No greasy, no cakey, less oxidized formula.</li>
+                </ul>
+
+                <ul id="wardahHarga" class="info-list" style="display: none;">
+                    <li>Rp. 122.500</li>
+                    <li><a href="https://id.shp.ee/ye1dtLN">galleryee</a></li>
+                   
+                </ul>
+
+                <ul id="wardahIngredients" class="info-list" style="display: none;">
+                    <li>1. SkinMatch Technology</li>
+					<li>2. Glow Perfecting Pigment</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+		<div class="right">
+			<h2 style="text-align: center;"><b>Glad2glow</b></h2>
+			<p style="text-align: center;"><img src="gambar/g2g.jpg"><br></p>
+			<div class="info-container">
+                <tombol onclick="showSection('Glad2glowDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('Glad2glowHarga')">Harga</tombol>
+                <tombol onclick="showSection('Glad2glowIngredients')">Kandungan</tombol>
+
+                <ul id="Glad2glowDescription" class="info-list">
+                    <li>Cushion dengan kandungan skincare, coverage tinggi namun terasa ringan di wajah. Dilengkapi puff dengan bentuk unik, menjangkau setiap sudut area wajah lebih mudah dan merata</li>
+                </ul>
+
+                <ul id="Glad2glowHarga" class="info-list" style="display: none;">
+                    <li>Rp. 89.000</li>
+                    <li><a href="https://id.shp.ee/4rTgtet">galleryee</a></li>
+                </ul>
+
+                <ul id="Glad2glowIngredients" class="info-list" style="display: none;">
+                    <li>AQUA, CI 77891, CYCLOPENTASILOXANE, TRIMETHYLSILOXYSILICATE, DIMETHICONE, METHYL TRIMETHICONE, HEXYLDECYL MYRISTOYL METHYLAMINOPROPIONATE, BUTYLENE GLYCOL, CI 77492, GLYCERIN, ACRYLATES/STEARYL ACRYLATE/DIMETHICONE METHACRYLATE COPOLYMER, CI 77491, MAGNESIUM SULFATE, DISTEARDIMONIUM HECTORITE, ALUMINUM HYDROXIDE, TRIETHOXYCAPRYLYLSILANE, SYNTHETIC FLUORPHLOGOPITE, 1,2-HEXANEDIOL, CI 77499, CAPRYLYL GLYCOL, DIMETHICONE CROSSPOLYMER, GLYCERYL CAPRYLATE, TRIHYDROXYSTEARIN, PALMITIC ACID, ETHYLHEXYLGLYCERIN, SORBITAN SESQUIOLEATE, TOCOPHEROL, PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE, PANTHENOL, FRAGARIA VESCA FRUIT EXTRACT, MORUS ALBA ROOT EXTRACT, RUBUS IDAEUS (RASPBERRY) FRUIT EXTRACT, VACCINIUM ANGUSTIFOLIUM FRUIT EXTRACT, PRUNUS PERSICA (PEACH) FRUIT EXTRACT, TITANIUM DIOXIDE (NANO), ZINC OXIDE (NANO), HOMOSALATE, HYDROLYZED HYALURONIC ACID, HYDROGENATED LECITHIN, DIPROPYLENE GLYCOL, PENTYLENE GLYCOL, GLYCERYL STEARATE, SUCROSE DISTEARATE</li>
+                </ul>
+            </div>
+		 </div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<h2 style="text-align: center;">Emina Daily Matte Cushion</h2>
+			<p style="text-align: center;"><img src="gambar/emina.jpg">  <br>
+			</p> 
+			<div class="info-container">
+                <tombol onclick="showSection('EminaDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('EminaHarga')">Harga</tombol>
+                <tombol onclick="showSection('EminaIngredients')">Kandungan</tombol>
+
+                <ul id="EminaDescription" class="info-list">
+                    <li>Memiliki keunggulan Healthy-matte skin-like finish/hasil akhir matte yang tampak sehat, ringan dan menyatu sempurna dengan kulit (tampak natural). Cushion foundation yang praktis, mudah diaplikasikan dengan oil absorber dapat menahan sebum/minyak instan untuk hasil flawless sejak lapisan pertama. Tahan selama 8 jam dapat memberikan coverage yang medium dan dapat di build sesuai keinginan.</li>
+                </ul>
+
+                <ul id="EminaHarga" class="info-list" style="display: none;">
+                    <li>Rp. 96.000</li>
+                    <li><a href="https://id.shp.ee/D6GPYqQ">galleryee</a></li>
+                </ul>
+
+                <ul id="EminaIngredients" class="info-list" style="display: none;">
+                    <li>Aqua, Dimethicone, Cyclopentasiloxane, Ethylhexyl Methoxycinnamate, Talc, Myristyl Lactate, PEG-10 Dimethicone, Neopentyl Glycol Diheptanoate, Trimethylsiloxysilicate, Titanium Dioxide, Glycerin, Nylon-12, Dyphenyl Dimethicone, Butylene Glycol, Magnesium Sulfate, Polyglyceryl-4 Isostearate, Silica, Phenoxyethanol, Cetyl PEG/PPG-10/1 Dimethicone, Disteardimonium Hectorite, Polyhydroxystearic Acid, Ethylhexylglycerin, Hexyl Laurate, Triethoxycaprylylsilane, 1,2-Heaxanediol, Caprylyl Glycol, Propylene Carbonate, Allantoin, Tocopherol, Aluminum Hydroxide, Disodium EDTA, Methicone, PCA Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer.</li>
+                </ul>
+            </div>
+		</div>
+		<div class="divider"></div>
+		<div class="right">
+			<h2 style="text-align: center;"><b>Skintific Cover All Perfect Cushion</b></h2>
+			<p style="text-align: center;"><img src="gambar/Skintific.jpg"> <br> </p>
+			<div class="info-container">
+                <tombol onclick="showSection('SkintificDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('SkintificHarga')">Harga</tombol>
+                <tombol onclick="showSection('SkintificIngredients')">Kandungan</tombol>
+
+                <ul id="SkintificDescription" class="info-list">
+                    <li>Dengan Nano Silicone Crosspolymer 0,25 mikron, memberikan tekstur ringan dengan coverage tinggi (medium to full coverage) dengan hasil akhir yang sempurna. Dilengkapi dengan tabir surya fisikokimia SPF 35 PA++++ yang membantu melindungi kulit Anda dari kerusakan akibat sinar UV.</li>
+                </ul>
+
+                <ul id="SkintificHarga" class="info-list" style="display: none;">
+                    <li>Rp. 149.000</li>
+                    <li><a href="https://id.shp.ee/2Awo9Qq">galleryee</a></li>
+                </ul>
+
+                <ul id="SkintificIngredients" class="info-list" style="display: none;">
+                    <li>1. Centella Asiatiqa : melembabkan kulit Anda</li>
+					<li>2. Ceramide : memperkuat pelindung kulit</li>
+					<li>3. Hyaluronic Acid : menghidrasi kulit dan mencegah kerutan pada kulit</li>
+                </ul>
+            </div>
+		 </div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<h2 style="text-align: center;">YOU Noutriwear+ Flawless Cushion</h2>
+			<p style="text-align: center;"><img src="gambar/you.jpg">  <br>
+			</p> 
+			<div class="info-container">
+                <tombol onclick="showSection('YOUDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('YOUHarga')">Harga</tombol>
+                <tombol onclick="showSection('YOUIngredients')">Kandungan</tombol>
+
+                <ul id="YOUDescription" class="info-list">
+                    <li>Cushion Full Coverage juga Soft Light-diffusing Powder memberikan blurring effect yang membantu menyamarkan garis-garis halus dan ketidaksempurnaan lainnya. Memiliki technology yang ringan serta breathable yang memberikan tampilan makeup tahan lama hingga 16 jam.</li>
+                </ul>
+
+                <ul id="YOUHarga" class="info-list" style="display: none;">
+                    <li>Rp. 149.175</li>
+                    <li><a href="https://id.shp.ee/faJu2vD">galleryee</a></li>
+                </ul>
+
+                <ul id="YOUIngredients" class="info-list" style="display: none;">
+                    <li>1. Centella Asiatica Extract: Membantu menenangkan kulit
+					<li>2. Immortelle C-lock Essence: Sebagai antioksidan yang melindungi kulit dari radikal bebas dan menjaga elastisitas kulit</li>
+                </ul>
+            </div>
+		</div>
+		<div class="divider"></div>
+		<div class="right">
+			<h2 style="text-align: center;"><b>Somethinc Hooman Breathable</b></h2>
+			<p style="text-align: center;"><img src="gambar/somethinc.jpg"> <br> </p>
+			<div class="info-container">
+                <tombol onclick="showSection('SomethincDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('SomethincHarga')">Harga</tombol>
+                <tombol onclick="showSection('SomethincIngredients')">Kandungan</tombol>
+
+                <ul id="SomethincDescription" class="info-list">
+                    <li>Dilengkapi anti-bacterial Breathable Technology & formulasi yang tidak mudah teroksidasi. Dengan Medium to High Coverage yang mampu menyamarkan pori-pori serta garis halus dalam sekali tap! Non-greasy, non-cakey, non-cracking & oil-controlling, Cushion ini memiliki SPF35 PA++++.</li>
+                </ul>
+
+                <ul id="SomethincHarga" class="info-list" style="display: none;">
+                    <li>Rp. 150.000</li>
+                    <li><a href="https://id.shp.ee/HSreNPS">galleryee</a></li>
+                </ul>
+
+                <ul id="SomethincIngredients" class="info-list" style="display: none;">
+                    <li>1. UV Vilter</li>
+                    <li>2. Silica</li>
+                    <li>3. Tocopherol (Vit E)</li>
+                </ul>
+            </div>
+		 </div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<h2 style="text-align: center;">Goute</h2>
+			<p style="text-align: center;"><img src="gambar/goute.jpg">  <br>
+			</p> 
+			<div class="info-container">
+                <tombol onclick="showSection('GouteDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('GouteHarga')">Harga</tombol>
+                <tombol onclick="showSection('GouteIngredients')">Kandungan</tombol>
+
+                <ul id="GouteDescription" class="info-list">
+                    <li>Cushion dewy finish yang dapat meratakan warna natural kulitmu tanpa menyumbat pori dan memberikan efek glowing di wajah. Dengan sponge “tear drop”. Dapat digunakan untuk menghasilkan tampilan makeup natural, maupun untuk high coverage makeup. </li>
+                </ul>
+
+                <ul id="GouteHarga" class="info-list" style="display: none;">
+                    <li>Rp. 73.000</li>
+                    <li><a href="https://id.shp.ee/WVHi61D">galleryee</a></li>
+                </ul>
+
+                <ul id="GouteIngredients" class="info-list" style="display: none;">
+                    <li>1. Niacinamide</li>
+                    <li>2. Chamomile Extract</li>
+                    <li>3. Vitamin B5</li>
+                    <li>4. Sun Protection</li>
+                </ul>
+            </div>
+		</div>
+		<div class="divider"></div>
+		<div class="right">
+			<h2 style="text-align: center;">Hanasui Serum Cushion Soulmatte</h2>
+			<p style="text-align: center;"><img src="gambar/hanasui.jpg"><br></p>
+			<div class="info-container">
+                <tombol onclick="showSection('HanasuiDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('HanasuiHarga')">Harga</tombol>
+                <tombol onclick="showSection('HanasuiIngredients')">Kandungan</tombol>
+
+                <ul id="HanasuiDescription" class="info-list">
+                    <li>Hanasui Serum Cushion Soulmatte merupakan cushion dengan hasil akhir matte. Dengan tekstur ringan yang menyatu di kulit, menciptakan tampilan sempurna yang dapat bertahan sepanjang hari.</li>
+                </ul>
+
+                <ul id="HanasuiHarga" class="info-list" style="display: none;">
+                    <li>Rp. 76.500</li>
+                    <li><a href="https://id.shp.ee/ayeycZ4">galleryee</a></li>
+                </ul>
+
+                <ul id="HanasuiIngredients" class="info-list" style="display: none;">
+                    <li>1. Niacinamide</li>
+                    <li>2. Sodium Hyaluronate</li>
+                    <li>3. Peptide</li>
+                </ul>
+            </div>
+		 </div>
+	</div>
+	<div class="container">
+		<div class="left">
+			<h2 style="text-align: center;">Luxcrime Perfecting Cover Cushion - Healthy Glow SPF 35 PA +++</h2>
+			<p style="text-align: center;"><img src="gambar/luxcrime.jpg">  <br>
+			</p> 
+			<div class="info-container">
+                <tombol onclick="showSection('LuxcrimeDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('LuxcrimeHarga')">Harga</tombol>
+                <tombol onclick="showSection('LuxcrimeIngredients')">Kandungan</tombol>
+
+                <ul id="LuxcrimeDescription" class="info-list">
+                    <li>Memberikan kulit wajah cerah dan berseri tanpa minyak. Menyamarkan kemerahan, meratakan warna kulit, dan mengecilkan pori-pori.</li>
+                </ul>
+
+                <ul id="LuxcrimeHarga" class="info-list" style="display: none;">
+                    <li>Rp. 179.000</li>
+                    <li><a href="https://id.shp.ee/6DbZYu2">galleryee</a></li>
+                </ul>
+
+
+                <ul id="LuxcrimeIngredients" class="info-list" style="display: none;">
+                    <li>Water, Titanium Dioxide (CI 77891), Cyclopentasiloxane, Butylene Glycol, Glycerin, Diphenylsiloxy Phenyl Trimethicone, Ethylhexyl Methoxycinnamate, Trimethylsiloxysilicate, Lauryl PEG-9 Polydimethylsiloxyethyl Dimethicone, Dicaprylyl Carbonate, Niacinamide, Caprylic/Capric Triglyceride, Phenyl Trimethicone, Pentylene Glycol, Synthetic Fluorphlogopite, Cyclohexasiloxane, Boron Nitride, PEG-10 Dimethicone, Phenoxyethanol, Magnesium Sulfate, Dipentaerythrityl Hexa C5-9 Acid Esters, Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer, Triethoxycaprylylsilane, Polyhydroxystearic Acid, Aluminum Hydroxide, Disteardimonium Hectorite, Stearic Acid, Ethylhexylglycerin, Lecithin, Ethylhexyl Palmitate, Isostearic Acid, Isopropyl Myristate, Polyglyceryl-3 Polyricinoleate, Hydrogenated Castor Oil Isostearate, Disodium EDTA, BHT, Tocopherol, Ceramide NP, Caffeine.</li>
+                </ul>
+            </div>
+		</div>
+		<div class="divider"></div>
+		<div class="right">
+			<h2 style="text-align: center;"><b>Sea Makeup Fix and Flawless Cover Cushion</b></h2>
+			<p style="text-align: center;"><img src="gambar/seamakeup.jpg"> <br> </p>
+			<div class="info-container">
+                <tombol onclick="showSection('SeaDescription')">Deskripsi</tombol>
+                <tombol onclick="showSection('SeaHarga')">Harga</tombol>
+                <tombol onclick="showSection('SeaIngredients')">Kandungan</tombol>
+
+                <ul id="SeaDescription" class="info-list">
+                    <li>Memiliki fungsi utama pencegahan dan perawatan jerawat. Dengan oil control power yang optimal, juga membantu merawat dan mencegah jerawat. Memiliki SPF 35 PA+++</li>
+                </ul>
+
+                <ul id="SeaHarga" class="info-list" style="display: none;">
+                    <li>Rp. 108.560</li>
+                    <li><a href="https://id.shp.ee/zmJQCdD">galleryee</a></li>
+                </ul>
+
+                <ul id="SeaIngredients" class="info-list" style="display: none;">
+                    <li>Aqua, methylpropanediol, cyclopentasiloxane, cyclohexasiloxane, ethylhexyl methoxycinnamate, octocrylene, isododecane, C12-15 alkyl benzoate, disteardimonium hectorite, silica, cetyl PEG/PPG-10/1 dimethicone, cetyl dimethicone, lauryl PEG-9 polydimethylsiloxyethyl dimethicone, biosaccharide gum-1, hydroxyacetophenone, PEG-10 dimethicone/vinyl dimethicone crosspolymer, sodium chloride, tocopherol, sodium hyaluronate, trimethylsiloxysilicate, dimethicone, salicylic acid, niacinamide, ceramide 3, maltodextrin, lactobacillus ferment, tocopheryl acetate, ubiquinone, arginine, 1,2-hexanediol, pentylene glycol, soluble collagen, phenoxyethanol, ethylhexylglycerin, titanium dioxide (CI 77891), yellow iron oxide (CI 77492), red iron oxide (CI 77491), black iron oxide (CI 77499), triethoxycaprylylsilane, trifolium pratense (clover) flower extract, galactomyces ferment filtrate</li>
+                </ul>
+            </div>
+		 </div>
+	</div>
+	<script>
+        function showSection(sectionId) {
+            // Menyembunyikan semua daftar
+            const sections = document.querySelectorAll('.info-list');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Menampilkan daftar yang dipilih
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+
+    <footer>
+        <p>© 2024 Cushion Lover All rights reserved.</p>
+        <p>Follow us on <a href="mailto:cs@sociolla.com">social media</a>.</p>
+    </footer>
+</body>
+</html>

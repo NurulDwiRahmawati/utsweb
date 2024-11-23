@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cushion Kecantikan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="gambar/pavicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">About 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="informasi.html">Informasi Cushion</a>
+              <a href="sejarah.html">Sejarah</a>
+            </div>
+          </div>
+           <a href="gallery.html">Gallery</a>
+           <a href="registration.html">Registration</a>
+           <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    
+    <header class="header">
+        <div class="sub-title">Selamat Datang di Cushion Makeup</div>
+        <h1>Cushion Lover</h1>
+    </header>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="institution">Institusi:</label>
+            <input type="text" id="institution" name="institution">
+
+            <label for="message">Kesan dan Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="responseMessage"></div> <!-- Tempat untuk menampilkan pesan respons -->
+    </section>
+    </main>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman form secara default
+
+            // Mengambil nilai dari input
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Menampilkan pesan respons
+            alert('Pesan Anda telah terkirim! Terima kasih telah menghubungi kami.');
+
+            // Redirect ke halaman index setelah beberapa detik
+            setTimeout(() => {
+              window.location.href = "index.html"; // Ganti "/" dengan URL halaman index Anda
+            }, 1000); // 3000 milidetik (3 detik)
+
+            // Reset form setelah pengiriman
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+    <main>
+        <div class="kontainer">
+            <div class="contact-info">
+                <h2>Informasi Sosmed</h2>
+                <ul>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+                    <i class="fas fa-envelope email-icon"></i><a href="mailto:cs@sociolla.com">cs@cushionlover.com</a></p>
+
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/sociolla?igsh=MTZsM21vejVqM2p4Ng==" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+                    <i class="fab fa-tiktok"></i>
+                    <a href="https://www.tiktok.com/@sociolla_id?_t=8rR9il7l6I8&_r=1" target="_blank" rel="noopener noreferrer">Tiktok</a>
+
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://x.com/sociolla_id?t=XzkxzkGOZ-R1Y-QqOTinvQ&s=09" target="_blank" rel="noopener noreferrer">Twitter</a>
+
+                    <i class="fab fa-youtube"></i>
+                    <a href="https://youtube.com/@sociollaid?si=fBbe7t7BZ9jkDUei" target="_blank" rel="noopener noreferrer">Youtube</a>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script> <!-- Link ke file JavaScript -->    
+    <footer>
+        <p>© 2024 Cushion Lover All rights reserved.</p>
+        <p>Follow us on <a href="mailto:cs@sociolla.com">social media</a>.</p>
+    </footer>
+</body>
+</html>
